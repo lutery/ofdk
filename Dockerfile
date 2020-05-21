@@ -20,5 +20,4 @@ EXPOSE 8100
 # ENTRYPOINT ["/opt/openoffice4/program/soffice", "-headless", "-nofirststartwizard", "-accept=\"socket,host=0.0.0.0,port=8100;urp;\""]
 #启动服务，占用8100端口
 # CMD /opt/openoffice4/program/soffice -headless -nofirststartwizard  -accept="socket,host=0.0.0.0,port=8100;urp;"
-
 ENTRYPOINT ["java", "-jar", "/office-service.jar"]
