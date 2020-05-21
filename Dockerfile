@@ -7,9 +7,11 @@ RUN apt-get update
 RUN apt-get install -y wget
 RUN wget -P / https://jaist.dl.sourceforge.net/project/openofficeorg.mirror/4.1.7/binaries/zh-CN/Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_zh-CN.tar.gz
 RUN tar -xvf Apache_OpenOffice*.tar.gz
+RUN pwd
+RUN ls
 # RUN dpkg -i /Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_zh-CN/zh-CN/DEBS/*.deb
-RUN dpkg -i /zh-CN/DEBS/*.deb
-RUN rm -rf /zh-CN
+RUN dpkg -i zh-CN/DEBS/*.deb
+RUN rm -rf zh-CN
 RUN apt-get update
 RUN apt-get install -y xserver-xorg
 RUN apt-get install -y x-window-system-core
