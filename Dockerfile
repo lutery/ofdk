@@ -5,7 +5,7 @@ ADD office-service-1.0.0.jar /office-service.jar
 RUN cd /
 RUN apt-get update
 RUN apt-get install -y wget
-RUN wget https://jaist.dl.sourceforge.net/project/openofficeorg.mirror/4.1.7/binaries/zh-CN/Apache_OpenOffice_4.1.7_Linux_x86-64_install-rpm_zh-CN.tar.gz
+RUN wget https://jaist.dl.sourceforge.net/project/openofficeorg.mirror/4.1.7/binaries/zh-CN/Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_zh-CN.tar.gz
 RUN tar -xvf Apache_OpenOffice*.tar.gz
 # RUN dpkg -i /Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_zh-CN/zh-CN/DEBS/*.deb
 RUN dpkg -i /zh-CN/DEBS/*.deb
