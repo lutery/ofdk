@@ -12,6 +12,7 @@ RUN ls
 # RUN dpkg -i /Apache_OpenOffice_4.1.7_Linux_x86-64_install-deb_zh-CN/zh-CN/DEBS/*.deb
 RUN dpkg -i zh-CN/DEBS/*.deb
 RUN ls /opt/openoffice4/program
+RUN find / -name soffice.bin
 RUN rm -rf zh-CN
 RUN apt-get update
 RUN apt-get install -y xserver-xorg
